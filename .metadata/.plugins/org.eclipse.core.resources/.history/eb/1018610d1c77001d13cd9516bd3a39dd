@@ -1,0 +1,39 @@
+package practicestudy;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import commonMethod.UtilityStudy;
+
+public class ClaimAssistent
+{
+	@FindBy(xpath = "(//i[@class='radio'])[1]") private WebElement clickOnGender;
+	@FindBy(id = "nameAdd") private WebElement EnterName;
+	@FindBy(id = "dob") private WebElement enterDOB;
+	@FindBy(xpath = "//input[@id='mobileNo']") private WebElement enterMoNo;
+	@FindBy(xpath = "//span[text()='View Free Quotes ']") private WebElement ClickQouets;
+	
+	public ClaimAssistent(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void enterDetails(WebDriver driver,String name,String DOB)
+	{
+		clickOnGender.click();
+		UtilityStudy.wait(driver,1000);
+		EnterName.sendKeys(name);
+		UtilityStudy.wait(driver,1000);
+		enterDOB.sendKeys(DOB);
+		UtilityStudy.wait(driver,1000);
+	}
+	
+	public void enterMoNo(WebDriver driver,String MoNo)
+	{
+		enterMoNo.sendKeys(MoNo);
+		UtilityStudy.wait(driver,1000);
+		ClickQouets.click();
+	}
+}

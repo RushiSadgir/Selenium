@@ -1,0 +1,10 @@
+package logical2;
+
+public class SpaceCount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

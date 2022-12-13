@@ -1,0 +1,5 @@
+package fbTest;
+
+public @interface AfterClass {
+
+}

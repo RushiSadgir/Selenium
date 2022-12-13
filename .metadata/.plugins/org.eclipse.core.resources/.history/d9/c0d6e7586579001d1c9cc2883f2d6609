@@ -1,0 +1,22 @@
+package logical;
+
+import java.util.Scanner;
+
+public class reverseInt {
+
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any Value");
+		int Number = sc.nextInt();
+		String orgString = Integer.toString(Number);
+		String rev="";
+		for(int i=orgString.length()-1;i>=0;i--)
+		{
+			rev=rev+orgString.charAt(i);
+			System.out.println(rev);
+		}
+
+	}
+
+}

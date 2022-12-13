@@ -1,0 +1,9 @@
+package practicestudy;
+
+import org.testng.annotations.Test;
+
+public class PolicyTest {
+  @Test
+  public void f() {
+  }
+}

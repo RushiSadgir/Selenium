@@ -1,0 +1,16 @@
+package stringAndStringB;
+
+public class StringStudy {
+
+	public static void main(String[] args)
+	{
+		String s=new String("Hi Good Morning");
+		System.out.println(s);
+		String b="Rushikesh here";
+		String a = s.concat(b);
+		System.out.println(a);
+		
+
+	}
+
+}

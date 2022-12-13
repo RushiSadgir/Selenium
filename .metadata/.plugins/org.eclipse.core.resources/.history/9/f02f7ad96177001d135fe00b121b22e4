@@ -1,0 +1,27 @@
+package stringAndStringB;
+
+public class SStudy {
+
+	public static void main(String[] args)
+	{
+		StringBuffer sb=new StringBuffer("Velocity");
+		System.out.println(sb);
+		sb.append(" Corporation");
+		System.out.println(sb);
+		sb.capacity();
+		System.out.println(sb.capacity());
+		
+		System.out.println(sb.charAt(10));
+		sb.delete(0, 4);
+		System.out.println(sb);
+		sb.length();
+		System.out.println(sb.length());
+		System.out.println("=====================");
+		StringBuilder sl=new StringBuilder("Rushikesh");
+		
+		sl.append( true);
+		System.out.println(sl);
+		
+	}
+
+}

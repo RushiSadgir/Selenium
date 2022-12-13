@@ -1,0 +1,38 @@
+package practiceOnNeo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
+
+import commonMethod.CommenUse;
+
+public class handelPopUp
+{
+	@FindBy(xpath = "(//a[text()='OK'])[2]") private WebElement clickonOK;
+	@FindBy(xpath = "(//a[text()='Close'])[5]") private WebElement clickonClose;
+	
+	public handelPopUp(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+		
+	}
+	public void PopUpHandel(WebDriver driver) throws InterruptedException
+	{
+		if(clickonOK.isDisplayed())
+		{
+		CommenUse.wait(driver, 2000);
+		clickonOK.click();
+		CommenUse.wait(driver, 2000);
+		clickonClose.click();
+		Reporter.log("Handeling POPup", true);
+		}
+		else
+		{
+			Reporter.log("Their is no PopUp ", true);
+			Thread.sleep(1000);
+		}
+	}
+
+}

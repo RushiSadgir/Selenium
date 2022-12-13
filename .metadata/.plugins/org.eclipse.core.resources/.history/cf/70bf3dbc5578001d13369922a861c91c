@@ -1,0 +1,49 @@
+package studyOfPattern;
+
+public class P4 {
+
+	public static void main(String[] args) 
+	{
+		int star=5;
+		int star1=4;
+		int space=1;
+		int space1=1;
+		for(int i=1;i<=9;i++)
+		{
+			for(int j=1;j<=star;j++)
+			{
+				System.out.print("*");
+			}
+			for(int l=1;l<=space;l++)
+			{
+				System.out.print(" ");
+			}
+			for(int m=1;m<=space1;m++)
+			{
+				System.out.print(" ");
+			}
+			
+			for(int k=1;k<=star1;k++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+			if(i<5)
+			{
+				star--;
+				space++;
+				star1--;
+				space1++;
+			}
+			else
+			{
+				star++;
+				space--;
+				star1++;
+				space1--;
+			}
+		}
+
+	}
+
+}

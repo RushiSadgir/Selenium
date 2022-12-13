@@ -1,0 +1,17 @@
+package logical;
+
+public class Palindrom {
+
+	public static void main(String[] args) 
+	{
+		String S="Hi hello how are you";
+		String p="";
+		for(int i=S.length()-1;i>=0;i--)
+		{
+			p=p+S.charAt(i);
+			System.out.print(p);
+		}
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package logical2;
+
+import java.util.Scanner;
+
+public class RevrseIntWithoutUsingString {
+
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any value");
+		int num = sc.nextInt();
+		int revNum = 0;
+		for(int i=num;i>1;i=i/10)
+		{
+			int mul = i%10;
+			revNum=revNum*10+mul;
+			
+		}
+		System.out.println(revNum);
+
+	}
+
+}

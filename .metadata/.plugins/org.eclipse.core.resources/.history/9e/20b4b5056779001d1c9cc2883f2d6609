@@ -1,0 +1,24 @@
+package logical;
+
+import java.util.Scanner;
+
+public class multiflication {
+
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Any Number");
+		int num = sc.nextInt();
+		int orgNum=num;
+		int revNum=0;
+		for(int i=orgNum;i>0;i=i/10)
+		{
+			int rev = orgNum%10;
+			int revn = revNum*10+rev;
+			}
+		System.out.println(revn);
+		
+
+	}
+
+}

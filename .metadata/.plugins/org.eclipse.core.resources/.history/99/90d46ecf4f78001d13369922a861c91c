@@ -1,0 +1,51 @@
+package patternStudy;
+
+public class stStyd {
+
+	public static void main(String[] args)
+	{
+	int star=5;
+	int star1=4;
+	int space=5;
+	int space2=4;
+	for(int i=1;i<=9;i++)
+	{
+		for(int j=1;j<=star;j++)
+		{
+			System.out.print("*");
+		}
+		
+		for(int l=0;l<=space;l++)
+		{
+			System.out.print(" ");
+		}
+		for(int k=1;k<=space2;k++)
+		{
+			System.out.print(" ");
+		}
+		for(int m=1;m<=star1;m++)
+		{
+			System.out.print("*");
+		}
+		
+		System.out.println();
+		if(i<5)
+		{
+			star++;
+			space--;
+			star1++;
+			space2--;
+		}
+		else
+		{
+			star--;
+			space++;
+			star1--;
+			space2++;
+		}
+	}
+		
+
+	}
+
+}

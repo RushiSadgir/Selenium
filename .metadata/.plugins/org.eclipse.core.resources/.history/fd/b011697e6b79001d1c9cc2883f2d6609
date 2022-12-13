@@ -1,0 +1,20 @@
+package logical2;
+
+import java.util.Scanner;
+
+public class RevreseStrinInt {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any value");
+		int num = sc.nextInt();
+		String strinNum = Integer.toString(num);
+		String S="";
+		for(int i=strinNum.length()-1;i>=0;i--)
+		{
+			S=S+strinNum.charAt(i);
+		}
+		System.out.println(S);
+	}
+
+}

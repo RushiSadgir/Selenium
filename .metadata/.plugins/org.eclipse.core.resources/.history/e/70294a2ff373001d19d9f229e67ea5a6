@@ -1,0 +1,20 @@
+package fecebook;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BrowserLaunch
+{
+	static WebDriver driver;
+	public static void launchTheBrowser() throws InterruptedException
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+		
+		driver= new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com/");
+		Thread.sleep(1000);
+
+	}
+
+}
