@@ -10,7 +10,6 @@ public class Base {
 	public static void launchingbrowser() throws InterruptedException 
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
-		
 		WebDriver driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://neostox.com/");
