@@ -24,7 +24,6 @@ public class UtilityStudy {
 	{
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		System.out.println(src);
-		
 		File trget= new File("C:\\Users\\hp\\Pictures\\Saved Pictures"+name+".png");
 		FileHandler.copy(src, trget);
 		Reporter.log("Taking Screenshot", true);
