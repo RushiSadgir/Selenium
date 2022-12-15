@@ -25,6 +25,8 @@ public class FeceBookTest extends BrowserLaunch
 		login=new loginePage(driver);
 		home=new FBHomePage(driver);
 		out=new LogOutPage(driver);
+		
+		
 	}
 	@BeforeMethod
 	public void loginOnFb() throws IOException, InterruptedException
