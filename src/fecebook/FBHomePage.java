@@ -17,6 +17,11 @@ public class FBHomePage
 		PageFactory.initElements(driver, this);
 	}
 	
+	
+	
+	
+	
+	
 	public String getactualName()
 	{
 		String Name = actualName.getText();
